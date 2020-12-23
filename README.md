@@ -1,6 +1,4 @@
 # receptive-field
-Compute the receptive field of deep neural networks in plain Python.
-
 There are some applications where the receptive field of your convolutional network is an important parameter to control. I found the following ways to compute it:
 
 - You can solve the appropiate equations of each layer by hand.
