@@ -1,4 +1,9 @@
 # receptive-field
+
+The mocking classes and their documentation are contained in the "mocks.py" module. In addition, several examples are presented in the jupyter notebook called "receptive_field_demo" so you can get familiar with the code.
+
+### Why?
+
 There are some applications where the receptive field of your convolutional network is an important parameter to control. I found the following ways to compute it:
 
 - You can solve the appropiate equations of each layer by hand.
@@ -9,4 +14,4 @@ For my use case, however, the first two options were not scaling well, and the t
 
 In this code we are mocking the neural network in the sense that each layer is represented by the kernel size, the stride, and the dilation rate. That is, we are not building/using the *_real_* neural network for simplicity. Although this means duplicated code (you are not using your real model if you already built it), it is not an important overhead in practice and the mocking process should feel very familiar to you if you are used to Pytorch or Keras.
 
-The mocking classes are contained in the "mocks.py" module and several examples are presented in the jupyter notebook called "receptive_field_demo".
+
